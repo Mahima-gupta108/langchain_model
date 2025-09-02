@@ -1,3 +1,4 @@
+streamlit
 langchain
 langchain-openai
 langchain-anthropic
@@ -7,4 +8,5 @@ langchain-huggingface
 transformers
 huggingface-hub
 python-dotenv
+
 
