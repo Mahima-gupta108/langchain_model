@@ -27,7 +27,11 @@ st.header("Research Tool")
 user_input = st.text_input("Enter your prompt here")
 
 if st.button('Summarize') and user_input:
-    resul
+   
+    result = model.invoke(user_input)
+    st.write(result.content)
+
+
 
 
 
