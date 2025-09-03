@@ -13,7 +13,7 @@ if not api_key:
 llm = HuggingFaceEndpoint(
     repo_id="deepseek-ai/DeepSeek-V3.1",
     task="text-generation",
-    huggingfacehub_api_token=api_key  # pass the API key here
+    huggingfacehub_api_token=api_key  
 )
 
 model = ChatHuggingFace(llm=llm)
@@ -25,6 +25,7 @@ if st.button('Summarize') and user_input:
    
     result = model.invoke(user_input)
     st.write(result.content)
+
 
 
 
